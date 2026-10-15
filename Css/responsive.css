@@ -1,0 +1,70 @@
+@media screen and (max-width: 500px) {
+  .main-header {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .main-header .nav-list.navbar {
+    display: none;
+  }
+
+  .link-list {
+    display: block;
+  }
+
+  .main-header .menu-navigtion {
+    display: block;
+  }
+
+  .soufi-banner-container {
+    display: block;
+    padding: 6rem 0;
+  }
+
+  .soufi-banner-container .left-section .banner-title {
+    width: 220px;
+  }
+
+  .soufi-banner-container .left-section .banner-text {
+    width: 260px;
+  }
+
+  .soufi-banner-container .right-section {
+    position: relative;
+    right: 8px;
+    margin: 2rem 0;
+  }
+
+  .soufi-banner-container .right-section .banner-shape {
+    top: 27px;
+    width: 45%;
+    right: -15px;
+  }
+
+  .slogan-container {
+    margin: 7rem 0;
+  }
+
+  .title-box{
+    position: relative;
+  }
+
+  .projects-container .title-box .View-all-project{
+    /* width: 140rem; */
+    position: absolute;
+    right: -250px;
+  }
+
+  .projects-container .title-box .title:after {
+    width: 200px;
+  }
+
+.projects-container .project-lists .project-card{
+  width: 900px;
+
+  &:last-child{
+    width: 0;
+  }
+}
+
+}

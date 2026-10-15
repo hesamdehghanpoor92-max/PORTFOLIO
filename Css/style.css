@@ -1,0 +1,578 @@
+/* ===================================== Headrer Styles ===================================== */
+.main-header {
+  width: 100%;
+  padding: 30px 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  background: #282c33;
+}
+
+.main-header .logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/*  navigtion list  */
+
+.main-header .nav-list {
+  display: flex;
+  gap: 16px;
+}
+
+.main-header .nav-list .nav-link {
+  padding: 0 0.5rem;
+  color: #abb2bf;
+  transition: all 0.3s;
+
+  /*  hover effect  */
+
+  &:hover {
+    color: white;
+  }
+}
+
+.main-header .nav-list .nav-link .sharp-sign {
+  color: #c778dd;
+}
+
+/*  active link  */
+
+.main-header .nav-list .nav-link.active {
+  color: white;
+}
+
+/*  menu navigtion  */
+
+.main-header .menu-navigtion{
+  display: none;
+}
+
+.main-header .menu-navigtion .menu-icon {
+  background: rgba(171, 178, 191, 0.1);
+  border-radius: 7px;
+  padding: 4px;
+  color: white;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+  transition: all 0.2s;
+}
+
+.main-header .menu-navigtion .menu-icon-close {
+  opacity: 0;
+}
+
+.main-header .menu-navigtion .link-header{
+  display: none;
+}
+
+.main-header .menu-navigtion .input-menu {
+  position: absolute;
+  right: 59px;
+  top: 43px;
+  z-index: 100;
+  transform: scale(2.5);
+  opacity: 0;
+
+  &:checked ~ .close-menu .menu-icon-close{
+    opacity: 1;
+  }
+
+  &:checked ~ .open-menu .menu-icon-open{
+    opacity: 0;
+  }
+
+  &:checked ~ .link-header{
+    display: block;
+  }
+
+}
+
+.main-header .link-list {
+  display: block;
+  position: absolute;
+  background: rgba(40, 44, 51, 0.639);
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  right: 84px;
+  top: 59px;
+}
+
+.main-header .link-list .list-item{
+  margin: 0.8rem 0;
+}
+
+/* ===================================== fixed social icons ===================================== */
+
+.social-container {
+  position: fixed;
+  z-index: 20;
+  left: 30px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-container .social-line {
+  height: 150px;
+  width: 1px;
+  background: #abb2bf;
+  margin-bottom: 10px;
+}
+
+.social-container .social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social-container .social-list .socal-link {
+  color: #abb2bf;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+
+  &:hover {
+    color: white;
+  }
+}
+
+/* ===================================== banner Style ===================================== */
+
+.soufi-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  gap: 2rem;
+  height: 100dvh;
+}
+
+/*  left  */
+
+.soufi-banner-container .left-section .banner-title {
+  font-size: 2.4rem;
+}
+
+.soufi-banner-container .left-section .banner-title .banner-title-hilight {
+  color: #c778dd;
+}
+
+.soufi-banner-container .left-section .banner-text {
+  margin: 2rem 0;
+  color: #abb2bf;
+  font-size: 1.1rem;
+}
+
+.soufi-banner-container .left-section .banner-button {
+  color: white;
+  border: 1px solid #c778dd;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: #282c33;
+  transition: all 0.3s;
+
+  &:hover {
+    background: rgb(199, 120, 221, 0.2);
+  }
+}
+
+/*  right  */
+
+.soufi-banner-container .right-section {
+  position: relative;
+}
+
+.soufi-banner-container .right-section .banner-img {
+  width: 93%;
+}
+
+.soufi-banner-container .right-section .banner-occuption {
+  position: relative;
+  padding: 5px 30px;
+  text-align: center;
+  top: -20px;
+  border: 1px solid #abb2bf;
+  background: #282c33;
+  color: #abb2bf;
+}
+
+.soufi-banner-container
+  .right-section
+  .banner-occuption
+  .banner-occuption-hilight {
+  color: white;
+}
+
+.soufi-banner-container .right-section .banner-shape {
+  position: absolute;
+  top: 172px;
+  right: -55px;
+  z-index: -10;
+}
+
+/* ===================================== slogan styles ===================================== */
+
+.slogan-container {
+  text-align: center;
+  padding-block-end: 4rem;
+  padding-block-start: 7rem;
+}
+
+.slogan-container .slogan-box {
+  border: 1px solid #abb2bf;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+
+.slogan-container .slogan-box .quote {
+  position: absolute;
+  background: #282c33;
+  width: 37px;
+}
+
+.slogan-container .slogan-box .quote.left-quote {
+  top: -20px;
+  left: 10px;
+}
+
+.slogan-container .slogan-box .quote.right-quote {
+  bottom: -10px;
+  right: 10px;
+}
+
+/* ===================================== projects style ===================================== */
+
+.projects-container {
+  width: 70%;
+  margin: 7rem auto;
+  position: relative;
+}
+
+/*  header  */
+
+.projects-container .title-box .title::after {
+  width: 400px;
+}
+
+.projects-container .project-header .View-all-project {
+  font-size: 16px;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #c778dd;
+  }
+}
+
+/*  lists  */
+
+.projects-container .project-lists {
+  display: flex;
+  padding-bottom: 60px;
+  gap: 1rem;
+}
+
+.projects-container .project-lists .project-card .project-img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.projects-container .project-lists .project-card .project-info-box {
+  padding: 16px;
+}
+
+.projects-container .project-lists .project-card {
+  border: 1px solid #abb2bf;
+}
+
+.projects-container .project-lists .project-card .project-technologies {
+  border-block: 1px solid #abb2bf;
+  color: #abb2bf;
+  padding: 0.4rem;
+}
+
+.projects-container .project-lists .project-card .project-lang {
+  font-size: 17px;
+}
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .project-name {
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: inherit;
+}
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .project-text {
+  color: #abb2bf;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .project-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/*  button  */
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .button-live {
+  color: white;
+  border: 1px solid #c778dd;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: #282c33;
+  transition: all 0.3s;
+
+  &:hover {
+    background: rgb(199, 120, 221, 0.2);
+  }
+}
+
+.projects-container .project-lists .project-card .button-cached {
+  background: #282c33;
+  padding: 8px 16px;
+  color: #abb2bf;
+  border: 2px solid #abb2bf;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(171, 178, 191, 0.2);
+  }
+}
+
+/*  projects shape  */
+
+.projects-shape {
+  position: absolute;
+  left: -26%;
+  top: 50%;
+}
+
+/* ===================================== skills style ===================================== */
+
+.skills-container {
+  width: 70%;
+  margin: 7rem auto;
+}
+
+.skills-container .title-box .title::after {
+  width: 300px;
+}
+
+.skills-list-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.skills-list-wrapper .skills-column {
+  width: 100%;
+}
+
+.skills-list-wrapper .skills-column .skills-box {
+  margin-bottom: 1rem;
+  border: 1px solid #abb2bf;
+}
+
+.skills-list-wrapper .skills-column .skills-box .box-header {
+  border-bottom: 1px solid #abb2bf;
+  padding: 0.5rem;
+}
+
+.skills-list-wrapper .skills-column .skills-box .box-content {
+  color: #abb2bf;
+  padding: 0.5rem;
+}
+
+/* ===================================== About style ===================================== */
+
+.about-container {
+  width: 70%;
+  margin: 7rem auto;
+  position: relative;
+}
+
+.about-container .title-box .title::after {
+  width: 400px;
+}
+
+.about-container .about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.about-container .about-wrapper .about-section {
+  width: 50%;
+}
+
+/*  left section  */
+
+.about-container .about-wrapper .left-section .button-about {
+  color: white;
+  border: 1px solid #c778dd;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: #282c33;
+  transition: all 0.3s;
+  margin-top: 2rem;
+  display: inline-block;
+
+  &:hover {
+    background: rgb(199, 120, 221, 0.2);
+  }
+}
+
+.about-container .about-wrapper .about-description {
+  color: #abb2bf;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-container .about-wrapper .right-section {
+  position: relative;
+  text-align: right;
+  margin-top: -65px;
+}
+
+.about-container .about-wrapper .right-section .about-soufi-img {
+  border-bottom: 1px solid #c778dd;
+}
+
+.about-container .about-wrapper .right-section .about-second-shape {
+  position: absolute;
+  right: 300px;
+  top: 60px;
+}
+
+/*  about shape  */
+
+.about-container .about-shape {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #abb2bf;
+  right: -28%;
+  bottom: 80px;
+}
+
+/* ===================================== contact style ===================================== */
+
+.contact-container {
+  width: 70%;
+  margin: 7rem auto;
+  position: relative;
+}
+
+.contact-container .title-box .title::after {
+  width: 200px;
+}
+
+.contact-container .contact-wrapper {
+  display: flex;
+}
+
+.contact-container .contact-wrapper .contact-section {
+  width: 50%;
+}
+
+.contact-container .contact-wrapper .left-section .contact-description {
+  color: #abb2bf;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.contact-container .contact-wrapper .right-section .message-box {
+  border: 1px solid #abb2bf;
+  display: inline-block;
+  padding: 1rem;
+  text-align: left;
+}
+
+.contact-container .contact-wrapper .right-section .social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.contact-container .contact-wrapper .right-section .social-list .socal-link {
+  color: #abb2bf;
+  transition: all 0.3s;
+  &:hover {
+    color: white;
+  }
+}
+
+.contact-container
+  .contact-wrapper
+  .right-section
+  .message-box
+  .message-header-title {
+  margin-bottom: 1rem;
+}
+
+.contact-container .contact-wrapper .right-section {
+  text-align: right;
+  align-self: flex-end;
+}
+
+/*  contact shape  */
+
+.contact-container .contacts-shape {
+  position: absolute;
+  left: -25%;
+  bottom: 100px;
+}
+
+/* ===================================== footer style ===================================== */
+
+.main-footer {
+  width: 100%;
+  padding: 2rem 15%;
+  margin-bottom: 1.7rem;
+  border-top: 1px solid #abb2bf;
+}
+
+.main-footer .logo-wrapper {
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.main-footer .copy-right-text {
+  color: #abb2bf;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.main-footer .copy-right-text .footer-link {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,187 @@
+/* ===================================== projects style ===================================== */
+
+.projects-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 7rem 0;
+  position: relative;
+}
+
+/*  header  */
+
+.projects-container .title-box.projects-title{
+  display: block;
+  >.title{
+    margin-bottom: 20px;
+  }
+}
+
+.projects-container .project-header .View-all-project {
+  font-size: 16px;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #c778dd;
+  }
+}
+
+/*  lists  */
+
+.projects-container .project-lists {
+  display: flex;
+  padding-bottom: 60px;
+  gap: 1rem;
+}
+
+.projects-container .project-lists .project-card .project-img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.projects-container .project-lists .project-card .project-info-box {
+  padding: 16px;
+}
+
+.projects-container .project-lists .project-card {
+  border: 1px solid #abb2bf;
+  width: 400px;
+}
+
+.projects-container .project-lists .project-card .project-technologies {
+  border-block: 1px solid #abb2bf;
+  color: #abb2bf;
+  padding: 0.4rem;
+}
+
+.projects-container .project-lists .project-card .project-lang {
+  font-size: 17px;
+}
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .project-name {
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: inherit;
+}
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .project-text {
+  color: #abb2bf;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .project-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/*  button  */
+
+.projects-container
+  .project-lists
+  .project-card
+  .project-info-box
+  .button-live {
+  color: white;
+  border: 1px solid #c778dd;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: #282c33;
+  transition: all 0.3s;
+
+  &:hover {
+    background: rgb(199, 120, 221, 0.2);
+  }
+}
+
+.projects-container .project-lists .project-card .button-cached {
+  background: #282c33;
+  padding: 8px 16px;
+  color: #abb2bf;
+  border: 2px solid #abb2bf;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(171, 178, 191, 0.2);
+  }
+}
+
+/*  projects shape  */
+
+.projects-container .shape{
+  position: absolute;
+  right: -21%;
+  bottom: 30%;
+}
+
+.projects-container .first-shape {
+  position: absolute;
+  left: -23%;
+  top: 20%;
+}
+
+.projects-container .second-shape {
+  position: absolute;
+  left: -28%;
+  bottom: 38%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #abb2bf;
+}
+
+.projects-container .third-shape{
+  position: absolute;
+  left: -23%;
+  bottom: 15%;
+}
+
+/*  small project style  */
+
+.projects-container .small-project-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projects-container .small-project-list .project-small-box {
+  border: 1px solid #abb2bf;
+  width: 30%;
+}
+
+.projects-container .small-project-list .project-small-box .box-header {
+  border-bottom: 1px solid #abb2bf;
+  color: #abb2bf;
+}
+
+.projects-container .small-project-list .project-small-box .box-header .header {
+  padding: 0.4rem;
+  font-size: 17px;
+}
+
+.projects-container .small-project-list .project-small-box .box-content{
+  padding: 16px;
+}
+.projects-container .small-project-list .project-small-box .box-content .project-name{
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+.projects-container .small-project-list .project-small-box .box-content .project-text{
+  color: #abb2bf;
+  font-size: 16px;
+  margin-bottom: 10px;
+}

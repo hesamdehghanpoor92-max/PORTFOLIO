@@ -1,0 +1,40 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family:
+    Fira Code,
+    sans-serif;
+  background: #282c33;
+  color: white;
+  overflow-x: hidden;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("../assets/Fonts/FiraCode-VariableFont_wght.ttf") format("TrueType");
+}

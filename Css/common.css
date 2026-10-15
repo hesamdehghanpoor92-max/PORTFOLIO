@@ -1,0 +1,231 @@
+/* ===================================== title box style ===================================== */
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.title-box .title {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  position: relative;
+  
+  /*  purpke line  */
+
+  &::after {
+    content: "";
+    height: 1px;
+    background: #c778dd;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 108%;
+  }
+}
+
+.title-box .title .title-hilight {
+  color: #c778dd;
+}
+
+/* ===================================== button ===================================== */
+
+.button-one{
+    color: white;
+  border: 1px solid #c778dd;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: #282c33;
+  transition: all 0.3s;
+
+  &:hover {
+    background: rgb(199, 120, 221, 0.2);
+  }
+}
+
+.button-two{
+    background: #282c33;
+  padding: 8px 16px;
+  color: #abb2bf;
+  border: 2px solid #abb2bf;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(171, 178, 191, 0.2);
+  }
+}
+
+
+/* ===================================== Headrer Styles ===================================== */
+.main-header {
+  width: 100%;
+  padding: 30px 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  background: #282c33;
+}
+
+.main-header .logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/*  navigtion list  */
+
+.main-header .nav-list {
+  display: flex;
+  gap: 16px;
+}
+
+.main-header .nav-list .nav-link {
+  padding: 0 0.5rem;
+  color: #abb2bf;
+  transition: all 0.3s;
+
+  /*  hover effect  */
+
+  &:hover {
+    color: white;
+  }
+}
+
+.main-header .nav-list .nav-link .sharp-sign {
+  color: #c778dd;
+}
+
+/*  active link  */
+
+.main-header .nav-list .nav-link.active {
+  color: white;
+}
+
+/*  menu navigtion  */
+
+.main-header .menu-navigtion{
+  display: none;
+}
+
+.main-header .menu-navigtion .menu-icon {
+  background: rgba(171, 178, 191, 0.1);
+  border-radius: 7px;
+  padding: 4px;
+  color: white;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+  transition: all 0.2s;
+}
+
+.main-header .menu-navigtion .menu-icon-close {
+  opacity: 0;
+}
+
+.main-header .menu-navigtion .link-header{
+  display: none;
+}
+
+.main-header .menu-navigtion .input-menu {
+  position: absolute;
+  right: 59px;
+  top: 43px;
+  z-index: 100;
+  transform: scale(2.5);
+  opacity: 0;
+
+  &:checked ~ .close-menu .menu-icon-close{
+    opacity: 1;
+  }
+
+  &:checked ~ .open-menu .menu-icon-open{
+    opacity: 0;
+  }
+
+  &:checked ~ .link-header{
+    display: block;
+  }
+
+}
+
+.main-header .link-list {
+  display: block;
+  position: absolute;
+  background: rgba(40, 44, 51, 0.639);
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  right: 84px;
+  top: 59px;
+}
+
+.main-header .link-list .list-item{
+  margin: 0.8rem 0;
+}
+
+/* ===================================== fixed social icons ===================================== */
+.social-container {
+  position: fixed;
+  z-index: 20;
+  left: 30px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-container .social-line {
+  height: 150px;
+  width: 1px;
+  background: #abb2bf;
+  margin-bottom: 10px;
+}
+
+.social-container .social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social-container .social-list .socal-link {
+  color: #abb2bf;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+
+  &:hover {
+    color: white;
+  }
+}
+
+/* ===================================== footer style ===================================== */
+
+.main-footer {
+  width: 100%;
+  padding: 2rem 15%;
+  margin-bottom: 1.7rem;
+  border-top: 1px solid #abb2bf;
+}
+
+.main-footer .logo-wrapper {
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.main-footer .copy-right-text {
+  color: #abb2bf;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.main-footer .copy-right-text .footer-link {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,176 @@
+.about-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 7rem 0;
+}
+
+.about-container .about-title {
+  display: block;
+  margin-bottom: 5rem;
+
+  > .title {
+    margin-bottom: 20px;
+  }
+}
+
+.about-container .about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.about-container .about-wrapper .about-section {
+  width: 50%;
+}
+
+/*  left section  */
+
+.about-container .about-wrapper .about-description {
+  color: #abb2bf;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-container .about-wrapper .right-section {
+  position: relative;
+  text-align: right;
+  margin-top: -65px;
+}
+
+.about-container .about-wrapper .right-section .about-soufi-img {
+  border-bottom: 1px solid #c778dd;
+}
+
+.about-container .about-wrapper .right-section .about-second-shape {
+  position: absolute;
+  right: 300px;
+  top: 60px;
+}
+
+/*  about shape  */
+
+.about-container .about-shape {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #abb2bf;
+  right: -5%;
+  bottom: 40%;
+}
+
+.about-container .img-shape {
+  position: absolute;
+  left: 10px;
+  top: 52%;
+}
+
+/* ===================================== skills style ===================================== */
+
+.skills-container {
+  width: 70%;
+  margin: 7rem auto;
+  position: relative;
+}
+
+.skills-container .title-box .title::after {
+  width: 300px;
+}
+
+.skills-container .skills-list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.skills-container .skills-list-wrapper .skills-box {
+  margin-bottom: 1rem;
+  border: 1px solid #abb2bf;
+  width: 100%;
+}
+
+.skills-container .skills-list-wrapper .skills-box .box-header {
+  border-bottom: 1px solid #abb2bf;
+  padding: 0.5rem;
+}
+
+.skills-container .skills-list-wrapper .skills-box .box-content {
+  color: #abb2bf;
+  padding: 0.5rem;
+}
+
+.skills-container .img-shape {
+  position: absolute;
+  right: -24%;
+  top: -32%;
+}
+
+/* ===================================== facts style ===================================== */
+.facts-container {
+  width: 70%;
+  margin: 7rem auto;
+  position: relative;
+}
+
+.facts-container .content {
+  display: flex;
+}
+
+/* left  */
+
+.facts-container .content .left-section .facts-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.facts-container .content .left-section .facts-box.facts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.facts-container .content .left-section .facts-box .fact {
+  border: 1px solid #abb2bf;
+  color: #abb2bf;
+  margin-bottom: 1rem;
+  padding: 8px;
+}
+
+.facts-container .content .left-section .facts-box .special-word {
+  color: white;
+}
+
+/* right */
+
+.facts-container .content .right-section {
+  position: relative;
+}
+
+.facts-container .content .right-section .shape-square {
+  position: absolute;
+  left: 14rem;
+  bottom: 50px;
+}
+
+.facts-container .content .right-section .shape-dottod {
+  position: absolute;
+  left: 10rem;
+  bottom: 9.5rem;
+}
+
+.facts-container .fact-shape {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #abb2bf;
+  left: -28.5%;
+  bottom: 15%;
+}
+
+.facts-container .img-shape{
+  position: absolute;
+  right: -22%;
+  bottom: -40px;
+}

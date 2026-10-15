@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="./assets/font-awesome/css/all-fonts.min.css" />
+    <link rel="stylesheet" href="./Css/common.css" />
+    <link rel="stylesheet" href="./Css/reset.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/responsive.css" />
+  </head>
+  <body>
+    <!-- ---------------------------- Header ---------------------------- -->
+    <header class="main-header">
+      <!-- logo -->
+      <a href="./index.html" class="logo-wrapper">
+        <img src="./assets/images/logo-icon.png" alt="logo" />
+        <h3>SoufiLearn</h3>
+      </a>
+
+      <!-- navigtion list -->
+
+      <nav>
+        
+        <ul class="nav-list navbar">
+          <li>
+            <a href="./index.html" class="nav-link active">
+              <span class="sharp-sign">#</span>home</a
+            >
+          </li>
+          <li>
+            <a href="./pages/projects.html" class="nav-link"><span class="sharp-sign">#</span>works</a
+            >
+          </li>
+          <li>
+            <a href="./pages/about-me.html" class="nav-link"><span class="sharp-sign">#</span>about-me</a
+            >
+          </li>
+          <li>
+            <a href="./pages/contacts.html" class="nav-link"><span class="sharp-sign">#</span>contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-navigtion">
+        <input type="checkbox" id="menu" class="input-menu" />
+        <label for="menu" class="open-menu">
+          <img
+            src="./assets/icons/menu-icon (open).png"
+            alt=""
+            class="menu-icon menu-icon-open"
+          />
+        </label>
+
+        <label for="menu" class="close-menu">
+          <img src="./assets/icons/menu-icon (close).png" alt="" class="menu-icon menu-icon-close">
+        </label>
+
+        <div class="link-header">
+
+          <ul class="link-list nav-list">
+            
+             <li class="list-item">
+            <a href="./index.html" class="nav-link active">
+              <span class="sharp-sign">#</span>home</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="./pages/projects.html" class="nav-link"><span class="sharp-sign">#</span>works</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="./pages/about-me.html" class="nav-link"><span class="sharp-sign">#</span>about-me</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="./pages/contacts.html" class="nav-link"><span class="sharp-sign">#</span>contacts</a
+            >
+          </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- fixed social icons -->
+    <div class="social-container">
+      <div class="social-line"></div>
+
+      <ul class="social-list">
+        <li>
+          <a
+            href="https://github.com/soufi-learn"
+            target="_blank"
+            class="socal-link"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="mailto:soufilearn@gmail.com"
+            target="_blank"
+            class="socal-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://t.me/soufi_learn" target="_blank" class="socal-link">
+            <i class="fa fa-telegram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ---------------------------- soufi banner ---------------------------- -->
+
+    <div class="soufi-banner-container">
+      <!-- left section -->
+      <section class="left-section">
+        <h2 class="banner-title">
+          Soufi is a
+          <span class="banner-title-hilight">teacher</span>
+          and
+          <br />
+          <span class="banner-title-hilight">front-end developer</span>
+        </h2>
+
+        <p class="banner-text">
+          Focuses on teaching front-end programming <br />
+          languages and shows you how it’s done with fun!
+        </p>
+
+        <a href="#" class="banner-button">Contact me!!</a>
+      </section>
+
+      <!-- right section -->
+
+      <section class="right-section">
+        <img src="./assets/images/soufi.png" alt="soufi" class="banner-img" />
+
+        <p class="banner-occuption">
+          Founder & Instructor at
+          <span class="banner-occuption-hilight">SoufiLearn</span>
+        </p>
+
+        <img
+          src="./assets/images/first-shape.png"
+          alt="banner-shape"
+          class="banner-shape"
+        />
+      </section>
+    </div>
+
+    <!-- ---------------------------- slogan section ---------------------------- -->
+
+    <div class="slogan-container">
+      <div class="slogan-box">
+        <img
+          src="./assets/icons/left-quote.png"
+          alt="quote"
+          class="left-quote quote"
+        />
+        <p class="main-text">Where learning is more interesting than fun.</p>
+        <img
+          src="./assets/icons/right-quote.png"
+          alt="quote"
+          class="right-quote quote"
+        />
+      </div>
+    </div>
+
+    <!-- ---------------------------- project section ---------------------------- -->
+
+    <div class="projects-container">
+      <!--  title and view more project  -->
+
+      <div class="title-box">
+        <h3 class="title"><span class="title-hilight">#</span>projects</h3>
+        <a href="./pages/projects.html" class="View-all-project">View all ~~&gt;</a>
+      </div>
+
+      <!--  project lists  -->
+      <div class="project-lists">
+        <section class="project-card">
+          <img
+            src="./assets/images/project-1.jpg"
+            alt="project"
+            class="project-img"
+          />
+
+          <div class="project-technologies">
+            <span class="project-lang">HTML CSS Javascript</span>
+          </div>
+
+          <div class="project-info-box">
+            <h3 class="project-name">New Waive</h3>
+            <p class="project-text">Wear your confidence.</p>
+
+            <!--  links  -->
+            <div class="project-actions">
+              <button class="button-live">
+                <a href="#">live &#60;~&gt;</a>
+              </button>
+
+              <button class="button-cached">
+                <a href="#">Cached &gt;=</a>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-card">
+          <img
+            src="./assets/images/project-2.jpg"
+            alt="project"
+            class="project-img"
+          />
+
+          <div class="project-technologies">
+            <span class="project-lang">HTML CSS Javascript React</span>
+          </div>
+
+          <div class="project-info-box">
+            <h3 class="project-name">Nikolai</h3>
+            <p class="project-text">Your world, your music.</p>
+            <button class="button-live">
+              <a href="#">live &#60;~&gt;</a>
+            </button>
+          </div>
+        </section>
+
+        <section class="project-card">
+          <img
+            src="./assets/images/project-3.jpg"
+            alt="project"
+            class="project-img"
+          />
+
+          <div class="project-technologies">
+            <span class="project-lang">CSS Express Node.js</span>
+          </div>
+
+          <div class="project-info-box">
+            <h3 class="project-name">Burger Food</h3>
+            <p class="project-text">Get what your tummy wants!</p>
+            <button class="button-live">
+              <a href="#">live &#60;~&gt;</a>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- projects shape -->
+      <img
+        src="./assets/images/second-shape.png"
+        alt="shape"
+        class="projects-shape"
+      />
+    </div>
+
+    <!-- ---------------------------- skills section ---------------------------- -->
+    <div class="skills-container">
+      <div class="title-box">
+        <h3 class="title"><span class="title-hilight">#</span>skills</h3>
+      </div>
+
+      <!--  skills list  -->
+      <div class="skills-list-wrapper">
+        <section class="skills-column">
+          <!--  box  -->
+          <div class="skills-box">
+            <p class="box-header">Languages</p>
+            <div class="box-content">
+              <p>TypeScript Lua</p>
+              <p>Python JavaScript</p>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <p class="box-header">Frameworks</p>
+            <div class="box-content">
+              <p>React Vue</p>
+              <p>Disnake Discord</p>
+              <p>Flask Express.js</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills-column">
+          <!--  box  -->
+          <div class="skills-box">
+            <p class="box-header">Databases</p>
+            <div class="box-content">
+              <p>SQLite PostgreSQL</p>
+              <p>Mongo</p>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <p class="box-header">Other</p>
+            <div class="box-content">
+              <p>HTML css SCSS</p>
+              <p>REST Jinja</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills-column">
+          <!--  box  -->
+          <div class="skills-box">
+            <p class="box-header">Tools</p>
+            <div class="box-content">
+              <p>VSCode Linux</p>
+              <p>Figma Arch</p>
+              <p>Git Font Awesome</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ---------------------------- About me ---------------------------- -->
+    <div class="about-container">
+      <div class="title-box">
+        <h3 class="title"><span class="title-hilight">#</span>about-me</h3>
+      </div>
+
+      <!--  left section  -->
+
+      <div class="about-wrapper">
+        <section class="left-section about-section">
+          <p class="about-description">
+            Hello, i’m Soufi! <br />
+            Founder of Soufi Learn. <br />
+          </p>
+
+          <p class="about-description">
+            At Sufi Learn, we believe learning should be fun, practical, and
+            inspiring. Our mission is to empower students and aspiring
+            programmers with high-quality, project-based education that blends
+            theory with real-world application. From HTML and CSS to JavaScript
+            and beyond, we provide step-by-step guidance, practical examples,
+            and a supportive community to help learners succeed.
+          </p>
+          <a href="#" class="button-about">Read more -&gt;</a>
+        </section>
+
+        <!--  right section  -->
+
+        <section class="right-section about-section">
+          <img
+            src="./assets/images/about-soufi.png"
+            alt="Soufi"
+            class="about-soufi-img"
+          />
+
+          <img
+            src="./assets/images/second-shape.png"
+            alt="Soufi"
+            class="about-second-shape"
+          />
+        </section>
+      </div>
+
+      <!--  about shape  -->
+      <div class="about-shape"></div>
+    </div>
+
+    <!-- ---------------------------- contacts ---------------------------- -->
+    <div class="contact-container">
+      <div class="title-box">
+        <h3 class="title"><span class="title-hilight">#</span>contacts</h3>
+      </div>
+
+      <div class="contact-wrapper">
+        <!--  left section  -->
+
+        <section class="contact-section left-section">
+          <p class="contact-description">
+            Have questions, suggestions, or just want to say hi? We’d love to
+            hear from you! At Soufi Learn, we’re always ready to help
+            students,learners!
+          </p>
+
+          <p class="contact-description">
+            Whether it’s about our courses, a technical issue, or collaboration
+            opportunities, reach out and we’ll get back to you as soon as
+            possible.
+          </p>
+        </section>
+
+        <!--  rigth section  -->
+        <section class="contact-section right-section">
+          <div class="message-box">
+            <h4 class="message-header-title">Message me here</h4>
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://t.me/soufi_learn"
+                  target="_blank"
+                  class="socal-link"
+                >
+                  <i class="fa fa-telegram"></i>
+                  @soufi_learn
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://github.com/soufi-learn"
+                  target="_blank"
+                  class="socal-link"
+                >
+                  <i class="fa fa-github"></i>
+                  soufi-learn
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:soufilearn@gmail.com"
+                  target="_blank"
+                  class="socal-link"
+                >
+                  <i class="fa fa-envelope"></i>
+                  soufilearn@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- contacts shape -->
+      <img
+        src="./assets/images/second-shape.png"
+        alt="shape"
+        class="contacts-shape"
+      />
+    </div>
+
+    <footer class="main-footer">
+      <a href="./index.html" class="logo-wrapper">
+        <img src="./assets/images/logo-icon.png" alt="logo" />
+        <h3>SoufiLearn</h3>
+      </a>
+
+      <p>Where learning is more interesting than fun</p>
+      <p class="copy-right-text">
+        &copy; Copyright 2026. Made by
+        <a href="https://instagram.com/soufi_learn" class="footer-link"
+          >SoufiLearn</a
+        >
+      </p>
+    </footer>
+    
+  </body>
+</html>
